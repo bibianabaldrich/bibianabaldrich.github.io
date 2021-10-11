@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vive Mercado</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/Assets/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/Assets/favicon.ico" type="image/x-icon" />
+
+    <!-- Estilos css -->
+    <link href="normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="sstilos.css">
+
+
+</head>
+
+<body>
+    <header>
+        <!-- Banner -->
+        <div class="banner">
+            <div id="lineader" class="linea">
+                <div class="linea-decorativa"></div>
+            </div>
+
+            <div class="logo">
+                <img src="Assets/logo_pagina.png" alt="" class="logo-imagen" />
+            </div>
+            <div id="lineaizq" class="linea">
+                <div class="linea-decorativa"></div>
+            </div>
+        </div>
+
+        <!-- Menu -->
+        <div class="menu-navegacion">
+            <!-- Nav bar -->
+            <nav class="nav-menu">
+                <label for="touch" id="label-touch"> <span>☰</span> </label>
+                <input type="checkbox" id="touch">
+                <ul class="slide">
+                    <li><a href="/index.html">INICIO</a></li>
+                    <li><a href="/Visitantes/productos.html">PRODUCTOS</a></li>
+                    <li><a href="/Visitantes/articulos.html">ARTICULOS</a></li>
+                    <li><a href="/Visitantes/contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <!-- boton de iniciar sesion -->
+            <div class="div-btn-iniciar">
+                <div class="btn-iniciar-sesion"><a href="#">INICIAR SESION</a></div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <!-- foto portada -->
+        <div class="contenedor-portada">
+            <div class="portada">
+                <div class="contenedor-foto1">
+                    <!-- imagen 1 -->
+                </div>
+                <div class="contenedor-foto2">
+                    <!-- imagen 2 -->
+                </div>
+            </div>
+        </div>
+
+        <!--Productos disponibles -->
+        <div class="contenedor-productosdisponibles">
+            <div class="productosdisponibles">
+                <h2 class="titulo-productosdisponibles">Productos Disponibles</h2>
+                <div class="grid-productosdisponibles">
+                    <div id="productod1" class="imagenpd"></div>
+                    <label for="" class="nombreproducto">Nombre producto</label>
+                    <div id="productod2" class="imagenpd"></div>
+                    <label for="" class="nombreproducto">Nombre producto</label>
+                    <div id="productod3" class="imagenpd"></div>
+                    <label for="" class="nombreproducto">Nombre producto</label>
+                    <div id="productod4" class="imagenpd"></div>
+                    <label for="" class="nombreproducto">Nombre producto</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Articulos disponibles -->
+        <div class="contenedor-articulosdisponibles">
+            <h2 class="titulo-articulosdisponibles">Articulos Disponibles</h2>
+            <div class="grid-articulosdisponibles">
+                <div id="articulodp1" class="imagenapd">
+                    <div id="fotodp1" class="fotodelarticulo"></div>
+                    <div class="contenidodelarticulo">
+                        <h3 class="tituloarticulo">titulo articulo</h3>
+                        <div class="btnVermas">Ver más</div>
+                    </div>
+                </div>
+                <div id="articulodp2" class="imagenapd">
+                    <div id="foto2" class="fotodelarticulo"></div>
+                    <div class="contenidodelarticulo">
+                        <h3 class="tituloarticulo">titulo articulo</h3>
+                        <div class="btnVermas">Ver más</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="piedepagina">
+            <div id="div-logo-footer" class="division-footer">
+                <img src="Assets/logo_pagina.png" alt="" class="logo-footer-imagen" />
+            </div>
+            <div id="div-menu-footer" class="division-footer">
+                <h4>Menu</h4>
+                <ul>
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="/Visitantes/productos.html">Productos</a></li>
+                    <li><a href="/Visitantes/articulos.html">Articulos</a></li>
+                    <li><a href="/Visitantes/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div id="div-contacto-footer" class="division-footer">
+                <h4>Contacto</h4>
+                <ul>
+                    <li>Teléfono:</li>
+                    <li>Correo:</li>
+                    <li>Dirección:</li>
+
+                </ul>
+            </div>
+            <div id="div-subscripcion" class="division-footer">
+                <h4 id="titulosub-footer">Subcribete</h4>
+                <input type="email" name="" id="correosubcripcion">
+                <button type="submit" class="btn-iniciar-sesion" id="btn-sub-footer">
+                    <label for="">Enviar</label>
+                </button>
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
