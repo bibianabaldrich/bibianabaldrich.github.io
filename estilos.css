@@ -635,7 +635,6 @@ page productos
 .productos-pageproductos {
     grid-column: 2;
     grid-row: 1;
-    border: 1px solid black;
     margin-top: 30px;
 }
 
@@ -673,7 +672,6 @@ page productos
     flex-basis: 20%;
     position: relative;
     padding: 10px;
-    border: 1px solid black;
     box-sizing: border-box;
     display: grid;
     grid-template-rows: 1fr 0.2fr;
@@ -691,13 +689,13 @@ page productos
     }
 }
 
-@media(max-width: 815px) {
+@media(max-width: 900px) {
     .unproducto-pageproductos {
         flex-basis: 50%;
     }
 
     .categorias{
-        width: 100px;
+        width: 100px !important;
     }
     .categorias h2 {
         font-size:12px;
@@ -705,6 +703,15 @@ page productos
 
     .label-categorias-pageproductos{
         font-size:10px;
+    }
+    .fotoproducto-pageproducto{
+        width: 150px !important;
+        height:190px !important;
+    }
+
+    .nombreproducto-pageproducto{
+        width: 150px !important;
+        height:30px !important;
     }
 }
 
@@ -716,11 +723,27 @@ page productos
 
 .fotoproducto-pageproducto{
     grid-row: 1;
-    border: 1px blue solid;
+    border: 1px var(--grisclaro) solid;
+    width:190px;
+    height:230px;
+    margin: auto;
+    background-image: url(/Assets/Portada.jpg);
+    background-size: 100% auto;
+
 }
 
 .nombreproducto-pageproducto{
     grid-row: 2;
-    border: 1px red solid;
+    width:190px;
+    margin: auto;
+    height:40px;
+    font-size:18px;
+    font-family: Poppins Regular;
+    text-align: center;
+}
+
+.productos-pageproductos a{
+    text-decoration: none;
+    color: var(--azul);
 }
 
