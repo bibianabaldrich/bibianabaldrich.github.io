@@ -26,7 +26,7 @@
             </div>
 
             <div class="logo">
-                <img src="../Assets/logo_pagina.png" alt="" class="logo-imagen" />
+                <a href="../index.html"> <img src="../Assets/logo_pagina.png" alt="" class="logo-imagen" /></a>
             </div>
             <div id="lineaizq" class="linea">
                 <div class="linea-decorativa"></div>
@@ -38,7 +38,7 @@
             <!-- Nav bar -->
             <nav class="nav-menu">
                 <label for="touch" id="label-touch"> <span>☰</span> </label>
-                <input type="checkbox" id="touch" />
+                <input type="checkbox" id="touch">
                 <ul class="slide">
                     <li><a href="/index.html">INICIO</a></li>
                     <li><a href="/Visitantes/productos.html">PRODUCTOS</a></li>
@@ -48,36 +48,54 @@
             </nav>
             <!-- boton de iniciar sesion -->
             <div class="div-btn-iniciar">
-                <div class="btn-iniciar-sesion">
-                    <a href="/Visitantes/iniciarsesion.html">INICIAR SESION</a>
-                </div>
+                <div class="btn-iniciar-sesion"><a href="#">INICIAR SESION</a></div>
             </div>
         </div>
     </header>
 
 
     <main>
-        <h2>Nombre del producto</h2>
-        <div class="informaciondelproducto-pageunproducto">
-            <div class="fotodelproducto-pageunproducto"></div>
-            <div class="descripciondelproducto-pageunproducto">
-                informacion en una tabla
+        <div class="contenedor-articuloprincipal">
+            <h2 class="titulo-pageunarticulo">Titulo del articulo</h2>
+            <div class="fotodelarticulo-pageunarticulo"></div>
+            <h3>Autor: Anonimo</h3>
+            <div class="contenidodelarticulo-pageunarticulo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta facere amet vitae dolor quod optio nulla, corporis adipisci dolores, velit illum praesentium ad quibusdam harum fuga rem odit, tenetur exercitationem.<br>
+                <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dolorem harum maxime, facilis odit aperiam aliquid quibusdam cupiditate iure est impedit tenetur iste sint! At sunt repellendus error odio consectetur.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab veritatis blanditiis ullam fuga, vitae quis expedita amet ipsam minima magnam nihil cumque ducimus fugiat eius error consequuntur numquam quidem placeat.
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dolorem harum maxime, facilis odit aperiam aliquid quibusdam cupiditate iure est impedit tenetur iste sint! At sunt repellendus error odio consectetur.
+
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dolorem harum maxime, facilis odit aperiam aliquid quibusdam cupiditate iure est impedit tenetur iste sint! At sunt repellendus error odio consectetur.
+
+
             </div>
         </div>
 
 
-        <!--Productos disponibles -->
-        <div class="contenedor-productosdisponibles">
-            <div class="productosdisponibles">
-                <h2 class="titulo-productosdisponibles">Productos Disponibles</h2>
-                <div class="grid-productosdisponibles">
-                    <div id="productod1" class="imagenpd"></div>
-                    <div id="productod2" class="imagenpd"></div>
-                    <div id="productod3" class="imagenpd"></div>
-                    <div id="productod4" class="imagenpd"></div>
+
+        <!-- Articulos disponibles -->
+        <div class="contenedor-articulosdisponibles">
+            <h2 class="titulo-articulosdisponibles">Articulos Disponibles</h2>
+            <div class="grid-articulosdisponibles">
+                <div id="articulodp1" class="imagenapd">
+                    <div id="fotodp1" class="fotodelarticulo"></div>
+                    <div class="contenidodelarticulo">
+                        <h3 class="tituloarticulo">titulo articulo</h3>
+                        <div class="btnVermas">Ver más</div>
+                    </div>
+                </div>
+                <div id="articulodp2" class="imagenapd">
+                    <div id="foto2" class="fotodelarticulo"></div>
+                    <div class="contenidodelarticulo">
+                        <h3 class="tituloarticulo">titulo articulo</h3>
+                        <div class="btnVermas">Ver más</div>
+                    </div>
                 </div>
             </div>
         </div>
+
     </main>
 
     <!-- footer -->

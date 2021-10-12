@@ -299,7 +299,7 @@ header .banner .logo {
 
 .titulo-productosdisponibles {
     font-family: Poppins Bold;
-    font-size: 2.5vw;
+    font-size: 2.4vw;
     color: var(--naranja);
     text-align: center;
     letter-spacing: 0px;
@@ -344,7 +344,7 @@ header .banner .logo {
 
 .titulo-articulosdisponibles {
     font-family: Poppins Bold;
-    font-size: 2.5vw;
+    font-size: 2.4vw;
     color: var(--grismasoscuro);
     text-align: center;
     letter-spacing: 0px;
@@ -1139,4 +1139,54 @@ Page articulos
         font-size:12px;
         margin-top:1px;
     }
+}
+
+/* 
+
+page un articulo
+
+*/
+
+.contenedor-articuloprincipal{
+    width:60%;
+    margin:auto;
+    margin-bottom: 40px;
+}
+
+.titulo-pageunarticulo{
+    text-align: center;
+    color: var(--azul);
+    font-size: 25px;
+    font-family: Poppins Medium;
+}
+
+.fotodelarticulo-pageunarticulo{
+    background-image: url(/Assets/Portada.jpg);
+    width:100%;
+    height:35vw;
+}
+
+.contenedor-articuloprincipal h3{
+    font-size:12px;
+    font-family: Poppins Regular;
+    text-align: center;
+    color: var(--cafe);
+}
+
+.contenidodelarticulo-pageunarticulo{
+    font-size:22px;
+    text-align: justify;
+    font-family: Poppins Medium;
+}
+
+@media(max-width: 768px) {
+
+    .contenidodelarticulo-pageunarticulo{
+        font-size:18px;
+    }
+    .titulo-pageunarticulo{
+        font-size:20px;
+    }
+
+
 }
