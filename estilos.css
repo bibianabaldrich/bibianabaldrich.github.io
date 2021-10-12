@@ -647,8 +647,8 @@ page productos
     display: inline-block;
     width: 100%;
     grid-column: 1;
-    font-family: Montserrat SemiBold;
-    font-size:15px;
+    font-family: Poppins Regular;
+    font-size:13px;
 
 }
 
@@ -657,7 +657,7 @@ page productos
 }
 
 .categorias h2 {
-    font-family: Poppins Regular;
+    font-family: Poppins Bold;
     font-size: 22px;
     grid-column-start: 1;
     grid-column-end: 3;
