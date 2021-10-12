@@ -675,6 +675,8 @@ page productos
     padding: 10px;
     border: 1px solid black;
     box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 1fr 0.2fr;
 }
 
 @media(max-width: 1333px) {
@@ -695,8 +697,18 @@ page productos
     }
 }
 
-@media(max-width: 555px) {
-    .grid-item {
+@media(max-width: 768px) {
+    .unproducto-pageproductos{
         flex-basis: 100%;
     }
+}
+
+.fotoproducto-pageproducto{
+    grid-row: 1;
+    border: 1px blue solid;
+}
+
+.nombreproducto-pageproducto{
+    grid-row: 2;
+    border: 1px red solid;
 }
