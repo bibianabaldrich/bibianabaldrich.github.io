@@ -637,6 +637,7 @@ page productos
     grid-row: 1;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3px;
     grid-gap: 20px;
     border: 1px solid black;
     margin-top: 30px;
@@ -647,6 +648,8 @@ page productos
     width: 100%;
     grid-column: 1;
     font-family: Montserrat SemiBold;
+    font-size:15px;
+
 }
 
 .checkbox-categorias{
