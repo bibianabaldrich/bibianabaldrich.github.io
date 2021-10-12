@@ -12,9 +12,8 @@
     <link rel="icon" href="/Assets/favicon.ico" type="image/x-icon" />
 
     <!-- Estilos css -->
-    <link href="normalize.css" rel="stylesheet" type="text/css">
-    <link href="sstilos.css" rel="stylesheet" type="text/css">
-
+    <link href="../normalize.css" rel="stylesheet" type="text/css" />
+    <link href="../estilos.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -26,7 +25,7 @@
             </div>
 
             <div class="logo">
-                <img src="Assets/logo_pagina.png" alt="" class="logo-imagen" />
+                <img src="../Assets/logo_pagina.png" alt="" class="logo-imagen" />
             </div>
             <div id="lineaizq" class="linea">
                 <div class="linea-decorativa"></div>
@@ -38,43 +37,42 @@
             <!-- Nav bar -->
             <nav class="nav-menu">
                 <label for="touch" id="label-touch"> <span>☰</span> </label>
-                <input type="checkbox" id="touch">
+                <input type="checkbox" id="touch" />
                 <ul class="slide">
-                    <li><a href="#">INICIO</a></li>
-                    <li><a href="#">PRODUCTOS</a></li>
-                    <li><a href="#">ARTICULOS</a></li>
-                    <li><a href="#">CONTACTO</a></li>
+                    <li><a href="/index.html">INICIO</a></li>
+                    <li><a href="/Visitantes/productos.html">PRODUCTOS</a></li>
+                    <li><a href="/Visitantes/articulos.html">ARTICULOS</a></li>
+                    <li><a href="/Visitantes/contacto.html">CONTACTO</a></li>
                 </ul>
             </nav>
             <!-- boton de iniciar sesion -->
             <div class="div-btn-iniciar">
-                <div class="btn-iniciar-sesion"><a href="#">INICIAR SESION</a></div>
+                <div class="btn-iniciar-sesion">
+                    <a href="/Visitantes/iniciarsesion.html">INICIAR SESION</a>
+                </div>
             </div>
         </div>
     </header>
 
-
     <main>
-        <h2>Nombre del producto</h2>
-        <div class="informaciondelproducto-pageunproducto">
-            <div class="fotodelproducto-pageunproducto"></div>
-            <div class="descripciondelproducto-pageunproducto">
-                informacion en una tabla
-            </div>
-        </div>
-
-
-        <!--Productos disponibles -->
-        <div class="contenedor-productosdisponibles">
-            <div class="productosdisponibles">
-                <h2 class="titulo-productosdisponibles">Productos Disponibles</h2>
-                <div class="grid-productosdisponibles">
-                    <div id="productod1" class="imagenpd"></div>
-                    <div id="productod2" class="imagenpd"></div>
-                    <div id="productod3" class="imagenpd"></div>
-                    <div id="productod4" class="imagenpd"></div>
+        <h2 class="titulo-pagecontacto">Contactanos</h2>
+        <div class="conetendor-pagecontacto">
+            <form action="" id="formulario-contacto">
+                <label for="nombre-contat">Nombre:</label>
+                <input type="text" name="nombre-contato" id="nombre-contat" class="input-formulario-contacto"
+                    required />
+                <label for="correo-contacto">Correo:</label>
+                <input type="email" name="correo-contacto" id="correo-contacto" class="input-formulario-contacto" />
+                <label for="asunto-contacto">Asunto:</label>
+                <input type="text" name="asunto-contacto" id="asunto-contacto" class="input-formulario-contacto" />
+                <label for="mensaje-contacto">Mensaje:</label>
+                <textarea name="mensaje-contacto" id="mensaje-contacto" cols="30" rows="10"
+                    form="formulario-contacto" ></textarea>
+                <div class="contenedor-boton-enviar-contacto">
+                    <input type="submit" value="Enviar">
                 </div>
-            </div>
+                
+            </form>
         </div>
     </main>
 
@@ -82,16 +80,15 @@
     <footer>
         <div class="piedepagina">
             <div id="div-logo-footer" class="division-footer">
-                <img src="Assets/logo_pagina.png" alt="" class="logo-footer-imagen" />
+                <a href="../index.html"><img src="../Assets/logo_pagina.png" alt="" class="logo-footer-imagen" /></a>
             </div>
             <div id="div-menu-footer" class="division-footer">
                 <h4>Menu</h4>
                 <ul>
-                    <li>Inicio</li>
-                    <li>Productos</li>
-                    <li>Artículos</li>
-                    <li>Contacto</li>
-
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="/Visitantes/productos.html">Productos</a></li>
+                    <li><a href="/Visitantes/articulos.html">Articulos</a></li>
+                    <li><a href="/Visitantes/contacto.html">Contacto</a></li>
                 </ul>
             </div>
             <div id="div-contacto-footer" class="division-footer">
@@ -100,12 +97,14 @@
                     <li>Teléfono:</li>
                     <li>Correo:</li>
                     <li>Dirección:</li>
-
                 </ul>
             </div>
             <div id="div-subscripcion" class="division-footer">
-                <h4>Subcribete</h4>
-
+                <h4 id="titulosub-footer">Subcribete</h4>
+                <input type="email" name="" id="correosubcripcion" />
+                <button type="submit" class="btn-iniciar-sesion" id="btn-sub-footer">
+                    <label for="">Enviar</label>
+                </button>
             </div>
         </div>
     </footer>
