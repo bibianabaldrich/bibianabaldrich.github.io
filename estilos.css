@@ -500,6 +500,7 @@ header .banner .logo {
     margin: 3px;
     align-self: center;
     justify-self: center;
+    color: white;
 }
 
 .logo-footer-imagen {
@@ -512,6 +513,7 @@ header .banner .logo {
     margin: 1px;
     font-size: 1vw;
     padding: 1vw;
+    color: white;
 }
 
 #div-contacto-footer {
@@ -520,6 +522,7 @@ header .banner .logo {
     margin: 1px;
     font-size: 1vw;
     padding: 1vw;
+    color: white;
 }
 
 #div-subscripcion {
@@ -528,6 +531,7 @@ header .banner .logo {
     margin: 1px;
     font-size: 5px;
     padding: 1vw;
+    color: white;
 }
 
 #correosubcripcion {
@@ -536,6 +540,9 @@ header .banner .logo {
     height: 3vw;
     border-radius: 5px;
     margin-bottom: 2px;
+    color: white;
+    background-color: var(--grismasoscuro);
+    border: 0.7px solid #F5F5F5;
 }
 
 footer h4 {
@@ -568,6 +575,7 @@ footer li {
     font-family: Poppins Regular;
     font-size: 0.9vw;
     width: 100%;
+    color: white;
     padding-top: 0.2vw;
 }
 
