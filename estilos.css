@@ -672,12 +672,10 @@ page productos
     height: 320px;
     flex-basis: 20%;
     position: relative;
-    padding:10px;
+    padding: 10px;
     border: 1px solid black;
     box-sizing: border-box;
 }
-
-
 
 @media(max-width: 1333px) {
     .unproducto-pageproductos {
@@ -699,6 +697,6 @@ page productos
 
 @media(max-width: 555px) {
     .grid-item {
-      flex-basis: 100%;
+        flex-basis: 100%;
     }
-  }
+}
