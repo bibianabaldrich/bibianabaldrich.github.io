@@ -120,9 +120,11 @@ header .banner .logo {
 /* Revisar */
 
 .nav-menu ul li a:hover {
+    display: inline-block;
     background-color: var(--naranja);
     width: 100%;
-    height: 30px;
+    height: 100%;
+    margin-right: 55px;
 }
 
 .menu-navegacion .nav-menu li:first-child {
