@@ -213,7 +213,7 @@ header .banner .logo {
         transition: height .4s ease;
     }
     .slide li {
-        padding: 8px;
+        padding: 5px;
     }
     #touch {
         position: absolute;
