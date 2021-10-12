@@ -568,6 +568,9 @@ footer ul{
 #btn-sub-footer label {
     font-size: 1.3vw;
     font-family: Poppins Bold;
+    color: white;
+    border-color: var(--naranja);
+    border-style: solid;
 }
 
 footer li {
