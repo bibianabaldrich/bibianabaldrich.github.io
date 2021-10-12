@@ -695,6 +695,17 @@ page productos
     .unproducto-pageproductos {
         flex-basis: 50%;
     }
+
+    .categorias{
+        width: 100px;
+    }
+    .categorias h2 {
+        font-size:12px;
+    }
+
+    .label-categorias-pageproductos{
+        font-size:10px;
+    }
 }
 
 @media(max-width: 768px) {
@@ -712,3 +723,4 @@ page productos
     grid-row: 2;
     border: 1px red solid;
 }
+
