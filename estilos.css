@@ -121,7 +121,7 @@ header .banner .logo {
 
 .nav-menu ul li a:hover {
     background-color: var(--naranja);
-    width: 100%;
+    width: 30px;
     height: 100%;
 }
 
@@ -567,10 +567,9 @@ footer ul{
 
 #btn-sub-footer label {
     font-size: 1.3vw;
-    font-family: Poppins Bold;
+    font-family: Poppins Regular;
     color: white;
-    border-color: var(--naranja);
-    border-style: solid;
+    border: 1px solid var(--naranja);
 }
 
 footer li {
