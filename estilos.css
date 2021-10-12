@@ -552,8 +552,8 @@ footer h4 {
     font-family: Montserrat SemiBold;
 }
 
-footer ul{
-    padding-left:15px;
+footer ul {
+    padding-left: 15px;
 }
 
 #titulosub-footer {
@@ -588,13 +588,16 @@ footer li {
     color: white;
 }
 
-
 a {
     text-decoration: none !important;
 }
 
 /*
+
+
 page productos
+
+
 */
 
 .contenedordeproductos-pageproductos {
@@ -610,11 +613,15 @@ page productos
     grid-column: 1;
     grid-row: 1;
     margin: 30px;
-    background-color:var(--grismasoscuro);
-    width: 18vw;
+    background-color: var(--grismasoscuro);
+    width: 180px;
     padding: 15px;
     padding-top: 5px;
     height: 34vh;
+    background: white 0% 0% no-repeat padding-box;
+    box-shadow: 0px 5px 10px #0000001D;
+    border-radius: 8px;
+    opacity: 1;
 }
 
 /* lista de productos */
@@ -629,15 +636,14 @@ page productos
     margin-top: 30px;
 }
 
-
-.label-categorias-pageproductos{
+.label-categorias-pageproductos {
     display: inline-block;
     width: 100%;
 }
 
-.categorias h2{
-font-family: Poppins Regular;
-font-size: 25px;
+.categorias h2 {
+    font-family: Poppins Regular;
+    font-size: 22px;
 }
 
 .unproducto-pageproductos {
