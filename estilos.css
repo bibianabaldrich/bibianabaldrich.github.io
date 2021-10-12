@@ -626,7 +626,7 @@ page productos
     border-radius: 8px;
     opacity: 1;
     display: grid;
-    grid-template-columns: 1fr 0.3fr ;
+    grid-template-columns: 1fr 0.3fr;
     grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr;
 }
 
@@ -635,10 +635,6 @@ page productos
 .productos-pageproductos {
     grid-column: 2;
     grid-row: 1;
-    display: grid;
-    grid-template-columns: 1fr repeat(minmax(0,2),1fr);
-    column-gap: 3px;
-    grid-gap: 20px;
     border: 1px solid black;
     margin-top: 30px;
 }
@@ -648,11 +644,10 @@ page productos
     width: 100%;
     grid-column: 1;
     font-family: Poppins Regular;
-    font-size:13px;
-
+    font-size: 13px;
 }
 
-.checkbox-categorias{
+.checkbox-categorias {
     grid-column: 2;
 }
 
@@ -661,11 +656,22 @@ page productos
     font-size: 22px;
     grid-column-start: 1;
     grid-column-end: 3;
-    grid-row : 1;
+    grid-row: 1;
+}
+
+/* Grid para productos */
+
+.productos-pageproductos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
 }
 
 .unproducto-pageproductos {
     width: 220px;
     height: 320px;
+    flex-basis: 20%;
+    position: relative;
+    padding:10px;
     border: 1px solid black;
 }
