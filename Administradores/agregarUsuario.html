@@ -45,7 +45,7 @@
             </nav>
             <!-- boton de iniciar sesion -->
             <div class="div-btn-cerrar-admin">
-                <div class="btn-cerrar-sesion-admin"><a href="../index.html">CERRAR SESION</a></div>
+                <a href="../index.html" class="btn-cerrar-sesion-admin">CERRAR SESION</a>
             </div>
         </div>
     </header>
@@ -57,23 +57,42 @@
 
 
         <div class="datosdenuevousuario">
-            <form action="">
-                <label for="cedulanuevousuario">Cedula:</label>
-                <input type="text" name="cedulanuevousuario" id="cedulanuevousuario" required>
-                <label for="nombrenuevousuario">Nombre:</label>
-                <input type="text" name="nombrenuevousuario" id="nombrenuevousuario" required>
-                <label for="correonuevousuario">Correo:</label>
-                <input type="email" name="correonuevousuario" id="correonuevousuario">
-                <label for="fechanuevousuario">Fecha de Nacimiento:</label>
-                <input type="date" name="fechanuevousuario" id="fechanuevousuario">
-                <label for="celularnuevousuario">Celular:</label>
-                <input type="number" name="celularnuevousuario" id="celularnuevousuario">
-                <label for="direccionnuevousuario">Dirección:</label>
-                <input type="text" name="direccionnuevousuario" id="direccionnuevousuario" required>
-                <label for="agregarfotonuevousuario">Agregar Foto</label>
-                <input type="file" name="agregarfotonuevousuario" id="agregarfotonuevousuario" required>
-                
-                <input type="submit" name="Guardar">
+            <label for="" id="titulo-de-informacionPersonal">Información Personal</label>
+            <hr>
+            <form action="" class="formularioAgregarusuarios">
+                <div class="contenedordeformulario">
+                    <label for="cedulanuevousuario" id="dataCedula">Cedula:</label>
+                    <input type="number" name="cedulanuevousuario" id="cedulanuevousuario" class="input-formUsuarios"
+                        required>
+                    <label for="nombrenuevousuario" id="dataNombre">Nombre:</label>
+                    <input type="text" name="nombrenuevousuario" id="nombrenuevousuario" class="input-formUsuarios"
+                        required>
+                    <label for="correonuevousuario">Correo:</label>
+                    <input type="email" name="correonuevousuario" id="correonuevousuario" class="input-formUsuarios">
+
+
+
+                    <label for="fechanuevousuario">Fecha de Nacimiento:</label>
+                    <input type="date" name="fechanuevousuario" id="fechanuevousuario" class="input-formUsuarios">
+                    <label for="celularnuevousuario">Celular:</label>
+                    <input type="number" name="celularnuevousuario" id="celularnuevousuario" class="input-formUsuarios">
+                    <label for="direccionnuevousuario">Dirección:</label>
+                    <input type="text" name="direccionnuevousuario" id="direccionnuevousuario"
+                        class="input-formUsuarios" required>
+
+
+                </div>
+                <div class="contenedor-rol">
+                    <label for="">Rol:</label>
+                    <label for="" class="rol-user"> <input type="radio" name="rol" id="">Administrador</label>
+                    <label for="" class="rol-user"> <input type="radio" name="rol" id="">Vendedor</label>
+
+                </div>
+
+                <label for="agregarfotonuevousuario" class="subir">Agregar Foto
+                <input type="file" name="agregarfotonuevousuario" id="agregarfotonuevousuario" required></label>
+
+                <input type="submit" name="Guardar" class="btn-iniciar-sesion" id="guardar-contacto">
 
             </form>
         </div>
