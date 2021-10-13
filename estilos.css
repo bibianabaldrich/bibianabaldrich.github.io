@@ -1529,3 +1529,42 @@ input[type=file]{
 #guardar-contacto{
 margin: auto;
 }
+
+
+/*
+
+editar usuario
+
+*/
+
+#foto-usuarios-editar{
+    margin:auto;
+    width:180px;
+    height:210px;
+    border:1px var(--azul) solid;
+    margin-top:20px ;
+    margin-bottom:20px ;
+}
+
+#main-editarusuario .datosdenuevousuario{
+    height: 650px;}
+
+/* 
+
+ver articulo
+
+
+*/
+
+.botones-ajustes-verarticulo{
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.botones-ajustes-verarticulo a{
+    margin-right: 50px;
+    margin-left: 50px;
+    padding-top:15px ;
+    padding-bottom:25px ;
+}
