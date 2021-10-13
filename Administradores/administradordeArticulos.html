@@ -37,102 +37,118 @@
         <div class="menu-navegacion-admin">
             <!-- Nav bar -->
             <nav class="nav-menu-admin">
-                <label for="touch" id="label-touch-admin"> <span>☰</span> </label>
-                <input type="checkbox" id="touch-admin">
+
                 <ul class="slide-admin">
                     <li><a href="/Administradores/administradordeUsuarios.html">ADMINISTRADOR DE USUARIOS</a></li>
-                    <li><a href="/Administradores/">ADMINISTRADOR DE ARTICULOS</a></li>
+                    <li><a href="/Administradores/administradordeArticulos.html">ADMINISTRADOR DE ARTICULOS</a></li>
                 </ul>
             </nav>
             <!-- boton de iniciar sesion -->
-            <div class="div-btn-iniciar-admin">
-                <div class="btn-iniciar-sesion-admin"><a href="#">INICIAR SESION</a></div>
+            <div class="div-btn-cerrar-admin">
+                <a href="../index.html" class="btn-cerrar-sesion-admin">CERRAR SESION</a>
             </div>
         </div>
     </header>
 
 
-    <main id="main-unproducto">
-        <!-- informacion del producto -->
-        <h2 class="titulo-pageunproducto">Administrador de Usuarios</h2>
-        <div class="informaciondelproducto-pageunproducto">
-            <div class="celda-fotodelproducto-pageunproducto">
-            </div>
-            <div class="descripciondelproducto-pageunproducto">
-                <table>
-                    <tr>
-                        <th>Descripción:</th>
-                        <th>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nostrum, quis debitis enim fugit porro odit aliquam magnam necessitatibus quidem similique, adipisci ad, modi sapiente est ullam ipsum aperiam quia!</th>
-                    </tr>
-                    <tr>
-                        <th>Precio Minimo:</th>
-                        <th>4.000</th>
-                    </tr>
-                    <tr>
-                        <th>Precio Máximo</th>
-                        <th>15.000</th>
-                    </tr>
-                    <tr>
-                        <th>Cantidad</th>
-                        <th>30</th>
-                    </tr>
-                    <tr>
-                        <th>Plaza</th>
-                        <th>La primera</th>
-                    </tr>
-                </table>
-            </div>
-        </div>
+    <main id="main-admnistradordearticulos">
+
+        <h2 class="titulo-admin">Administrador de Articulos</h2>
 
 
-        <!--Productos disponibles -->
-        <div class="contenedor-productosdisponibles">
-            <div class="productosdisponibles">
-                <h2 class="titulo-productosdisponibles">Productos Disponibles</h2>
-                <div class="grid-productosdisponibles">
-                    <div id="productod1" class="imagenpd"></div>
-                    <div id="productod2" class="imagenpd"></div>
-                    <div id="productod3" class="imagenpd"></div>
-                    <div id="productod4" class="imagenpd"></div>
-                </div>
-            </div>
+        <div class="tabla-administradordearticulos">
+
+            <table class="table-tabla-administradordearticulos">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Titulo</th>
+                        <th>Estado</th>
+                        <th>Ver</th>
+                        <th>Ajustes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>1</th>
+                        <th>Aqui va el titulo aqui va el </th>
+                        <th>Pendiente</th>
+                        <th>
+                            <a href="#" class="btn-ajustes-administradorarticulos">Ver Articulo</a>
+                        </th>
+                        <th>
+                            <a href="#" class="btn-ajustes-administradordeusuarios">Aprobar</a>
+                            <a href="#" class="btn-ajustes-administradordeusuarios">Eliminar</a>
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <th>1</th>
+                        <th>Aqui va el titulo aqui va el </th>
+                        <th>Aprobado</th>
+                        <th>
+                            <a href="#" class="btn-ajustes-administradorarticulos">Ver Articulo</a>
+                        </th>
+                        <th>
+                            <a href="#" class="btn-ajustes-administradordeusuarios">Aprobar</a>
+                            <a href="#" class="btn-ajustes-administradordeusuarios">Eliminar</a>
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <th>1</th>
+                        <th>Aqui va el titulo aqui va el </th>
+                        <th>Pendiente</th>
+                        <th>
+                            <a href="#" class="btn-ajustes-administradorarticulos">Ver Articulo</a>
+                        </th>
+                        <th>
+                            <a href="#" class="btn-ajustes-administradordeusuarios">Aprobar</a>
+                            <a href="#" class="btn-ajustes-administradordeusuarios">Eliminar</a>
+                        </th>
+                    </tr>
+
+                </tbody>
+            </table>
+
+
         </div>
     </main>
- <!-- footer -->
- <footer>
-    <div class="piedepagina">
-        <div id="div-logo-footer" class="division-footer">
-            <a href="../index.html"><img src="../Assets/logo_pagina.png" alt="" class="logo-footer-imagen" /></a>
+    <!-- footer -->
+    <footer>
+        <div class="piedepagina">
+            <div id="div-logo-footer" class="division-footer">
+                <a href="../index.html"><img src="../Assets/logo_pagina.png" alt="" class="logo-footer-imagen" /></a>
 
-        </div>
-        <div id="div-menu-footer" class="division-footer">
-            <h4>Menu</h4>
-            <ul>
-                <li><a href="/index.html">Inicio</a></li>
-                <li><a href="/Visitantes/productos.html">Productos</a></li>
-                <li><a href="/Visitantes/articulos.html">Articulos</a></li>
-                <li><a href="/Visitantes/contacto.html">Contacto</a></li>
-            </ul>
-        </div>
-        <div id="div-contacto-footer" class="division-footer">
-            <h4>Contacto</h4>
-            <ul>
-                <li>Teléfono:</li>
-                <li>Correo:</li>
-                <li>Dirección:</li>
+            </div>
+            <div id="div-menu-footer" class="division-footer">
+                <h4>Menu</h4>
+                <ul>
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="/Visitantes/productos.html">Productos</a></li>
+                    <li><a href="/Visitantes/articulos.html">Articulos</a></li>
+                    <li><a href="/Visitantes/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div id="div-contacto-footer" class="division-footer">
+                <h4>Contacto</h4>
+                <ul>
+                    <li>Teléfono:</li>
+                    <li>Correo:</li>
+                    <li>Dirección:</li>
 
-            </ul>
-        </div>
-        <div id="div-subscripcion" class="division-footer">
-            <h4 id="titulosub-footer">Subcribete</h4>
-            <input type="email" name="" id="correosubcripcion">
-            <button type="submit" class="btn-iniciar-sesion" id="btn-sub-footer">
-                <label for="">Enviar</label>
-            </button>
+                </ul>
+            </div>
+            <div id="div-subscripcion" class="division-footer">
+                <h4 id="titulosub-footer">Subcribete</h4>
+                <input type="email" name="" id="correosubcripcion">
+                <button type="submit" class="btn-iniciar-sesion" id="btn-sub-footer">
+                    <label for="">Enviar</label>
+                </button>
 
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
 </body>
 
 </html>

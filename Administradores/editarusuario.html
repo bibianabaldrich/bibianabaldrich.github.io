@@ -45,39 +45,53 @@
             </nav>
             <!-- boton de iniciar sesion -->
             <div class="div-btn-cerrar-admin">
-                <div class="btn-cerrar-sesion-admin"><a href="../index.html">CERRAR SESION</a></div>
+                <a href="../index.html" class="btn-cerrar-sesion-admin">CERRAR SESION</a>
             </div>
         </div>
     </header>
 
 
     <main id="main-admnistradordeusarios">
-        <!-- informacion del producto -->
-        <h2 class="titulo-admin">Nuevo Usuario</h2>
 
-
-        <div class="datosdenuevousuario">
-            <form action="">
-                <label for="cedulanuevousuario">Cedula:</label>
-                <input type="text" name="cedulanuevousuario" id="cedulanuevousuario" required>
-                <label for="nombrenuevousuario">Nombre:</label>
-                <input type="text" name="nombrenuevousuario" id="nombrenuevousuario" required>
-                <label for="correonuevousuario">Correo:</label>
-                <input type="email" name="correonuevousuario" id="correonuevousuario">
-                <label for="fechanuevousuario">Fecha de Nacimiento:</label>
-                <input type="date" name="fechanuevousuario" id="fechanuevousuario">
-                <label for="celularnuevousuario">Celular:</label>
-                <input type="number" name="celularnuevousuario" id="celularnuevousuario">
-                <label for="direccionnuevousuario">Dirección:</label>
-                <input type="text" name="direccionnuevousuario" id="direccionnuevousuario" required>
-                <label for="agregarfotonuevousuario">Agregar Foto</label>
-                <input type="file" name="agregarfotonuevousuario" id="agregarfotonuevousuario" required>
-                
-                <input type="submit" name="Guardar">
-
-            </form>
+        <h2 class="titulo-admin">Administrador de Usuarios</h2>
+        <!--Agregar Usuario -->
+        <div class="div-btn-cerrar-admin" id="agregar-usuarios-admin">
+            <a href="/Administradores/agregarUsuario.html" class="btn-cerrar-sesion-admin">Agregar nuevo Usuario</a>
         </div>
 
+        <div class="tabla-administradordeusuarios">
+
+            <table border="1px">
+                <thead>
+                    <tr>
+                        <th>Cedula</th>
+                        <th>Nombre</th>
+                        <th>Celular</th>
+                        <th>Fecha</th>
+                        <th>Correo</th>
+                        <th>Contraseña</th>
+                        <th>Ajustes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>54256455</th>
+                        <th>Mayerling Luna</th>
+                        <th>3128094834</th>
+                        <th>03/03/1993</th>
+                        <th>malugar_5@hotmail.com</th>
+                        <th>4567454646</th>
+                        <th>
+                            <a href="/Administradores/agregarUsuario.html" class="btn-cerrar-sesion-admin">Agregar nuevo Usuario</a>
+                            <a href="/Administradores/agregarUsuario.html" class="btn-cerrar-sesion-admin">Agregar nuevo Usuario</a>
+                        </th>
+                    </tr>
+
+                </tbody>
+            </table>
+
+
+        </div>
     </main>
     <!-- footer -->
     <footer>

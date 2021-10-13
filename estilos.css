@@ -115,6 +115,8 @@ header .banner .logo {
 .nav-menu ul {
     list-style-type: none;
     margin: 0;
+    padding: 0;
+    margin-left: 40px;
 }
 
 .nav-menu ul li {
@@ -186,11 +188,12 @@ header .banner .logo {
         font-family: Poppins Regular;
     }
     .nav-menu {
-        width: 110px;
+        width: 120px;
         background: var(--grismasoscuro);
         margin: 0;
         margin-left: 10px;
         z-index: 10;
+        opacity: 0.9;
     }
     .nav-menu span {
         padding: 4px;
@@ -201,6 +204,9 @@ header .banner .logo {
         font-size: 1.2em;
         cursor: pointer;
         display: block;
+    }
+    .nav-menu ul {
+        margin-left: 0;
     }
     .nav-menu span::after {
         float: right;
@@ -227,6 +233,16 @@ header .banner .logo {
     }
     .menu-navegacion .nav-menu li:first-child {
         margin-left: 0px;
+    }
+    .nav-menu ul li a:hover {
+        display: inline-block;
+        background: transparent;
+        width: 100%;
+        height: 100%;
+        margin-right: 0;
+        margin-left: 0;
+        align-self: center;
+        color: #EC671B;
     }
 }
 
@@ -1198,34 +1214,31 @@ Menu principal Administrador
     list-style-type: none;
     margin: 0;
     padding: 0;
-    align-self: center;
+    margin-left: 40px;
 }
 
 .nav-menu-admin ul li {
     display: inline-block;
 }
 
-/* Revisar */
-
 .nav-menu-admin ul li a:hover {
     display: inline-block;
-    background-color: var(--naranja);
+    background-color: var(--azul);
     width: 100%;
     height: 100%;
-    margin-right: 55px;
+    margin-right: 20px;
+    margin-left: 20px;
     align-self: center;
-}
-
-.menu-navegacion-admin .nav-menu-admin li:first-child {
-    margin-left: 75px;
+    color: #EC671B;
 }
 
 .menu-navegacion-admin .nav-menu-admin a {
     display: inline-block;
-    margin-right: 55px;
+    margin-right: 20px;
+    margin-left: 20px;
     text-decoration: none;
     font-family: var(--unnamed-font-family-poppins);
-    font-size: 12px;
+    font-size: 14px;
     color: white;
     align-self: center;
 }
@@ -1249,16 +1262,10 @@ Menu principal Administrador
     align-items: center;
     justify-content: center;
     box-shadow: 0 0 6px var(--azul);
-}
-
-.div-btn-cerrar-admin .btn-cerrar-sesion-admin a {
-    display: inline-block;
     font-size: 1.1vw;
-    color: white;
     text-decoration: none;
-    left: 50%;
-    top: 50%;
     font-family: "Montserrat SemiBold";
+    color: white;
 }
 
 /* 
@@ -1272,4 +1279,146 @@ page administrador
     color: var(--azul);
     font-size: 25px;
     font-family: Poppins Medium;
+    margin-bottom: 10px;
+}
+
+#agregar-usuarios-admin .btn-cerrar-sesion-admin {
+    margin: auto;
+    width: 200px;
+    height: 34px;
+    background: var(--azul);
+}
+
+/* 
+
+tabla de usuarios
+
+*/
+
+.tabla-administradordeusuarios, .tabla-administradordearticulos {
+    width: 95%;
+    margin: auto;
+}
+
+.table-tabla-administradordeusuarios, .table-tabla-administradordearticulos {
+    font-family: Poppins Regular;
+    border-collapse: collapse;
+    border: 2px var(--naranja) solid;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 3px 3px 6px #00000029;
+}
+
+.table-tabla-administradordeusuarios thead,.table-tabla-administradordearticulos thead {
+    background-color: var(--grismasoscuro);
+    color: var(--grisclaro);
+    font-size: 14px;
+    letter-spacing: 1px;
+    height: 30px;
+}
+
+.table-tabla-administradordeusuarios tbody , .table-tabla-administradordearticulos tbody{
+    font-size: 12px;
+    color: rgb(82, 80, 80);
+}
+
+.table-tabla-administradordeusuarios tbody th,.table-tabla-administradordearticulos tbody th {
+  
+    border: 1px var(--grisoscuro) solid;
+}
+
+
+.table-tabla-administradordeusuarios thead th:nth-child(1) {
+    width: 10%;
+}
+
+.table-tabla-administradordeusuarios thead th:nth-child(2) {
+    width: 20%;
+}
+
+.table-tabla-administradordeusuarios thead th:nth-child(3) {
+    width: 10%;
+}
+
+.table-tabla-administradordeusuarios thead th:nth-child(4) {
+    width: 10%;
+}
+
+.table-tabla-administradordeusuarios thead th:nth-child(5) {
+    width: 20%;
+}
+
+.table-tabla-administradordeusuarios thead th:nth-child(6) {
+    width: 10%;
+}
+
+.table-tabla-administradordeusuarios thead th:nth-child(7) {
+    width: 20%;
+}
+
+.table-tabla-administradordeusuarios tbody th,.table-tabla-administradordearticulos tbody th {
+    height: 40px;
+    border-radius: 10px;
+}
+
+.btn-ajustes-administradordeusuarios, .btn-ajustes-administradorarticulos {
+    background-color: var(--naranja);
+    display: inline-block;
+    width: 65px;
+    height: 25px;
+    border-radius: 2px;
+    -webkit-box-shadow: 12px 12px 59px -32px rgba(245, 245, 245, 1);
+    -moz-box-shadow: 12px 12px 59px -32px rgba(245, 245, 245, 1);
+    box-shadow: 12px 12px 59px -32px rgba(245, 245, 245, 1);
+    box-shadow: 0 0 6px var(--grismasoscuro);
+    font-size: 1.1vw;
+    text-decoration: none;
+    font-family: Poppins Regular;
+    letter-spacing: 0.6px;
+    color: white;
+    padding-top: 5px;
+}
+
+.btn-ajustes-administradordeusuarios:first-child{
+    background-color:white;
+    color:var(--naranja);
+    
+}
+
+
+/* 
+
+page administrador de articulos
+
+
+*/
+
+
+.table-tabla-administradordearticulos thead th:nth-child(1) {
+    width: 5%;
+}
+
+.table-tabla-administradordearticulos thead th:nth-child(2) {
+    width: 35%;
+}
+
+.table-tabla-administradordearticulos thead th:nth-child(3) {
+    width: 15%;
+}
+
+.table-tabla-administradordearticulos thead th:nth-child(4) {
+    width: 20%;
+}
+
+.table-tabla-administradordearticulos thead th:nth-child(5) {
+    width: 25%;
+}
+
+#main-admnistradordearticulos .btn-ajustes-administradorarticulos{
+    width: 100px;
+    height: 25px;
+    background-color: var(--grismasoscuro);
+    color:white;
 }
