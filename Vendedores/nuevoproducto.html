@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vive Mercado</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/Assets/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/Assets/favicon.ico" type="image/x-icon" />
+
+    <!-- Estilos css -->
+    <link href="../normalize.css" rel="stylesheet" type="text/css">
+    <link href="../estilos.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <header>
+        <!-- Banner -->
+        <div class="banner">
+            <div id="lineader" class="linea">
+                <div class="linea-decorativa"></div>
+            </div>
+
+            <div class="logo">
+                <a href="../index.html"> <img src="../Assets/logo_pagina.png" alt="" class="logo-imagen" /></a>
+            </div>
+            <div id="lineaizq" class="linea">
+                <div class="linea-decorativa"></div>
+            </div>
+        </div>
+
+        <!-- Menu de administrador-->
+        <div class="menu-navegacion-admin">
+            <!-- Nav bar -->
+            <nav class="nav-menu-admin">
+
+                <ul class="slide-admin">
+                    <li><a href="/Vendedores/miperfil.html">Mi Perfil</a></li>
+                    <li><a href="/Vendedores/misproductos.html">Mis productos</a></li>
+                </ul>
+            </nav>
+            <!-- boton de iniciar sesion -->
+            <div class="div-btn-cerrar-admin">
+                <a href="../index.html" class="btn-cerrar-sesion-admin">CERRAR SESION</a>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-nuevoproducto">
+        <!-- informacion del producto -->
+        <h2 class="titulo-pageunproducto">Nombre del producto</h2>
+        <div class="informaciondelproducto-pagenuevoproducto">
+            <div class="celda-fotodelproducto-pagenuevoproducto">
+            </div>
+            <div class="descripciondelproducto-pageunproducto">
+                table
+                <label for="cedulanuevousuario" id="dataCedula">Nombre del producto:</label>
+                <input type="text" name="cedulanuevousuario" id="cedulanuevousuario" class="input-formUsuarios"
+                    required>
+                <label for="nombrenuevousuario" id="dataNombre">Precio Minimo:</label>
+                <input type="number" name="nombrenuevousuario" id="nombrenuevousuario" class="input-formUsuarios"
+                    required>
+                <label for="correonuevousuario">Precio Maximo:</label>
+                <input type="number" name="correonuevousuario" id="correonuevousuario" class="input-formUsuarios">
+
+
+
+                <label for="fechanuevousuario">Cantidad:</label>
+                <input type="number" name="fechanuevousuario" id="fechanuevousuario" class="input-formUsuarios">
+                <label for="celularnuevousuario">Descripcion:</label>
+                <input type="text" name="celularnuevousuario" id="celularnuevousuario" class="input-formUsuarios">
+                    <div class="contenedor-boton-enviar-contacto">
+                        <input type="submit" value="Publicar">
+                    </div>
+
+                </table>
+            </div>
+        </div>
+
+
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="piedepagina">
+            <div id="div-logo-footer" class="division-footer">
+                <a href="../index.html"><img src="../Assets/logo_pagina.png" alt="" class="logo-footer-imagen" /></a>
+
+            </div>
+            <div id="div-menu-footer" class="division-footer">
+                <h4>Menu</h4>
+                <ul>
+                    <li><a href="/Vendedores/miperfil.html">Mi Perfil</a></li>
+                    <li><a href="/Vendedores/misproductos.html">Mis productos</a></li>
+                    <li><a href="/Vendedores/nuevoarticulo.html">Postear</a></li>
+
+                </ul>
+            </div>
+            <div id="div-contacto-footer" class="division-footer">
+                <h4>Contacto</h4>
+                <ul>
+                    <li>Teléfono:</li>
+                    <li>Correo:</li>
+                    <li>Dirección:</li>
+
+                </ul>
+            </div>
+            <div id="div-subscripcion" class="division-footer">
+                <h4 id="titulosub-footer">Subcribete</h4>
+                <input type="email" name="" id="correosubcripcion">
+                <button type="submit" class="btn-iniciar-sesion" id="btn-sub-footer">
+                    <label for="">Enviar</label>
+                </button>
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

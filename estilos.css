@@ -1485,51 +1485,49 @@ page agregar usuario
 
 .contenedor-rol {
     margin-top: 14px;
-    margin-bottom:14px;
+    margin-bottom: 14px;
     display: grid;
     grid-template-columns: 0.3fr 0.7fr 8fr;
 }
 
-.rol-user{
+.rol-user {
     display: inline-block;
-    width:150px;
+    width: 150px;
 }
 
-.rol-user input{
-    display:inline-block;
+.rol-user input {
+    display: inline-block;
 }
 
-.subir{
+.subir {
     padding: 5px 10px;
     background: var(--grisoscuro);
     color: var(--naranja);
-    border:1px solid var(--naranja);
-    display:inline-block;
-    margin:auto;
-    width:100px;
-    height:23px;
-    text-align:center;
+    border: 1px solid var(--naranja);
+    display: inline-block;
+    margin: auto;
+    width: 100px;
+    height: 23px;
+    text-align: center;
     margin-bottom: 10px;
-    display:block;
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }
- 
-.subir:hover{
-    color:#fff;
+
+.subir:hover {
+    color: #fff;
     background: var(--azul);
-    border:1px solid var(--grismasoscuro);
-
+    border: 1px solid var(--grismasoscuro);
 }
 
-input[type=file]{
-    display:none;
+input[type=file] {
+    display: none;
 }
 
-#guardar-contacto{
-margin: auto;
+#guardar-contacto {
+    margin: auto;
 }
-
 
 /*
 
@@ -1537,17 +1535,18 @@ editar usuario
 
 */
 
-#foto-usuarios-editar{
-    margin:auto;
-    width:180px;
-    height:210px;
-    border:1px var(--azul) solid;
-    margin-top:20px ;
-    margin-bottom:20px ;
+#foto-usuarios-editar {
+    margin: auto;
+    width: 180px;
+    height: 210px;
+    border: 1px var(--azul) solid;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-#main-editarusuario .datosdenuevousuario{
-    height: 650px;}
+#main-editarusuario .datosdenuevousuario {
+    height: 650px;
+}
 
 /* 
 
@@ -1556,15 +1555,100 @@ ver articulo
 
 */
 
-.botones-ajustes-verarticulo{
+.botones-ajustes-verarticulo {
     margin: auto;
     text-align: center;
     margin-bottom: 20px;
 }
 
-.botones-ajustes-verarticulo a{
+.botones-ajustes-verarticulo a {
     margin-right: 50px;
     margin-left: 50px;
-    padding-top:15px ;
-    padding-bottom:25px ;
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+/*
+
+
+mi perfil
+
+
+*/
+
+#main-miperfil .datosdenuevousuario {
+    height: 650px;
+    margin-bottom: 20px;
+}
+
+#main-miperfil .datosdenuevousuario:last-child {
+    height: 130px;
+}
+
+#main-miperfil .datosdenuevousuario:last-child h2{
+    text-align: center;
+    font-family: Poppins Regular;
+}
+
+#main-miperfil .subir {
+    width: 180px;
+    margin-top: 20px;
+}
+
+/*
+
+    mis productos
+
+
+    */
+
+#page-misarticulos  .div-btn-cerrar-admin{
+    margin-top:20px;
+}
+
+#page-misarticulos .contenedordeproductos-pageproductos{
+    border: none;
+}
+
+/*
+
+pagina nuevo articulo
+
+*/
+
+#page-nuevoarticulo label,#page-nuevoarticulo input,#page-nuevoarticulo textarea {
+    font-size: 14px;
+}
+
+#page-nuevoarticulo h2{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* 
+
+
+pagina nuevo producto
+
+
+*/
+
+.informaciondelproducto-pagenuevoproducto{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
+}
+
+.celda-fotodelproducto-pagenuevoproducto{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column: 1;
+    width: 200px;
+    height: 250px;
+    margin: 4%;
+    align-self: center;
+    justify-self: center;
+    border: 1px var(--grismasoscuro) solid;
+    background-size: auto;
+    border-radius: 4px;
 }
