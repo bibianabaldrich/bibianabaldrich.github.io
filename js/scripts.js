@@ -1,13 +1,13 @@
-const containermodo = document.getElementById("container-modo");
-const containermodoicon = document.getElementById("container-modo-icon");
 
-containermodo.addEventListener("click", () => {
-    document.body.classList.toggle("dark");
-    if (containermodoicon.src.includes("luna.svg")) {
-        containermodoicon.src = "assets/images/sol.svg";
-    } else {
-        containermodoicon.src = "assets/images/luna.svg";
+
+function darkmode() {
+    var element = document.body;
+    element.classList.toggle("dark");
+    const containermodoicon = document.getElementById('container-modo-icono');
+//    containermodoicon.classList.toggle('far fa-moon');
+    if(document.body.className != "dark"){
+        containermodoicon.src = 'assets/images/sol.svg';
+    }else{
+        containermodoicon.src = 'assets/images/luna.svg';
     }
-
-
-})
+}
