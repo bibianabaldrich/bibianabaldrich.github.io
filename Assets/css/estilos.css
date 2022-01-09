@@ -1,0 +1,17 @@
+:root {
+
+    /* Colors: */
+    --unnamed-color-5b5b5d: #5B5B5D;
+    --color-principal: #FAFAFF;
+    --color-secundario: #D64933;
+    --color-primario: #7C1EAE;
+
+}
+
+body {
+    background-color: var(--color-principal);
+}
+
+body.dark{
+    --color-principal: #240934;
+}

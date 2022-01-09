@@ -9,51 +9,66 @@
 
     <!-- favicon -->
 
-    <link rel="icon" type="image/png" sizes="16x16"  href="assets/images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png" />
     <!-- Estilos css -->
-    <link href="/assets/css/normalize.css" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/estilos.css">
+    <link href="assets/css/normalize.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/estilos.css" />
 
-
+    <!-- scripts -->
+    <script src="js/scripts.js"></script>
 </head>
 
 <body>
     <header>
         <!-- Menu -->
         <div class="menunavegacion">
+            <div class="logo">
+                <a href="#">
+                    <img src="assets/images/logobibi.png" alt="Icon of Portfolio" />
+                </a>
+            </div>
+
             <!-- Nav bar -->
             <nav class="nav-menu">
-                <!-- <label for="touch" id="label-touch"> <span>☰</span> </label> -->
-                <!-- <input type="checkbox" id="touch"> -->
+
+                <input type="checkbox" id="touch">
+                <label for="touch" id="label-touch">
+                    <img src="assets/images/bars-solid.svg" alt="burger Menu">
+                </label>
                 <ul class="slide">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Sobre mi</a></li>
-                    <li><a href="#">Proyectos</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li class="nav-item"><a href="#">Inicio</a></li>
+                    <li class="nav-item"><a href="#divsobremi">Sobre mi</a></li>
+                    <li class="nav-item"><a href="#divproyectos">Proyectos</a></li>
+                    <li class="nav-item"><a href="#divcontacto">Contacto</a></li>
+                    <li class="nav-item">
+                        <a href="">Es</a>
+                    </li>
+                    <li class="nav-item">
+                        <div id="container-modo" class="container-modo">
+                            <img id="container-modo-icono" alt="icon theme" src="assets/images/luna.svg"
+                                alt="burger Menu" class="container-modo__icono">
+                        </div>
+
+                    </li>
                 </ul>
             </nav>
-
         </div>
     </header>
 
-
     <main>
-        <div class="divpresentacion"></div>
+        <div class="divpresentacion" id="divpresentacion"></div>
 
-        <div class="divsobremi"></div>
+        <div class="divsobremi" id="divsobremi"></div>
+        ""
+        <div class="divtecnologias" id="divtecnologias"></div>
 
-        <div class="divtecnologias"></div>
+        <div class="divservicios" id="divservicios"></div>
 
-        <div class="divservicios"></div>
+        <div class="divproyectos" id="divproyectos"></div>
 
-        <div class="divproyectos"></div>
+        <div class="divcontacto" id="divcontacto"></div>
 
-        <div class="divcontacto"></div>
-
-        <div class="divredessociales">
-        </div>
-
-
+        <div class="divredessociales" id="divredessociales"></div>
     </main>
 
     <!-- footer -->
