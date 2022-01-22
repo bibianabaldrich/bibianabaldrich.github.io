@@ -625,6 +625,9 @@ hr {
     -webkit-box-shadow: 12px 12px 59px -32px rgba(245, 245, 245, 1);
     -moz-box-shadow: 12px 12px 59px -32px rgba(245, 245, 245, 1);
     box-shadow: 12px 12px 59px -32px rgba(245, 245, 245, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     box-shadow: 0 0 6px var(--color-textomenu);
     font-size: 1.1vw;
     text-decoration: none;
@@ -632,8 +635,8 @@ hr {
     color: var(--color-textomenu);
     margin-right: auto;
     margin-left: auto;
-    
-    
+    cursor: pointer;
+    transition: 0.3s;
     margin-top: 20px;
 }
 
