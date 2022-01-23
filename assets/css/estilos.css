@@ -62,6 +62,11 @@ background: var(--color-morado-oscuro);
 .dark .contacto-form{
     background: var(--color-morado-oscuro);
     box-shadow: 2px 2px 10px #000000CF;
+    color: #FAFAFF;
+}
+
+.dark .contacto-form::placeholder{
+    color: #FAFAFF;
 }
 
 .dark .fab{
@@ -711,6 +716,12 @@ hr {
     /* margin-right: 40px; */
 }
 
+.fab:hover{
+    transform:scale(1.25);
+    
+    color: var(--color-secundario);
+}
+
 .divredessociales {
     margin: 0px auto;
     text-align: center;
@@ -736,3 +747,5 @@ hr {
     color: var(--color-textomenu);
     margin-bottom: 40px;
 }
+
+
