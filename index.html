@@ -18,7 +18,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- scripts -->
-    <script src="js/scripts.js"></script>
+
+
+    <script src="js/scripts.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" type="text/javascript"></script>
 </head>
 
 <body>
@@ -33,6 +36,17 @@
 
             <!-- Nav bar -->
             <div class="menu">
+
+
+                <label for="toggle-1" class="toggle-menu">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </label>
+                <input type="checkbox" id="toggle-1">
+                
                 <nav class="nav-menu">
 
                     <!-- <input type="checkbox" id="touch"> -->
@@ -65,12 +79,29 @@
         <section class="divpresentacion" id="divpresentacion">
             <p class="titulo-soy">Soy</p>
             <h1 class="nombre">Bibiana Baldrich</h1>
-            <h2 class="profesion" id="efecto">Esta pagina esta en construcción
-        
-            </h2>
+
+            <h2 class="profesion"> <span class="typed" id="typed"> </span></h2>
             <div class="boton-presentacion">
                 <a target="_blank" rel="noreferrer" href="assets/BibianaBaldricCV.pdf" class="cv_button">Download CV</a>
             </div>
+
+            <script>
+                var options = {
+                    strings: ['Diseñadora web', 'Desarrolladora Web', 'Diseñadora web'],
+                    typeSpeed: 75,
+                    startDelay: 300, // Tiempo de retraso en iniciar la animacion. Aplica tambien cuando termina y vuelve a iniciar,
+                    backSpeed: 75, // Velocidad en milisegundos para borrrar una letra,
+                    smartBackspace: true, // Eliminar solamente las palabras que sean nuevas en una cadena de texto.
+                    shuffle: false, // Alterar el orden en el que escribe las palabras.
+                    backDelay: 1500, // Tiempo de espera despues de que termina de escribir una palabra.
+                    loop: true, // Repetir el array de strings
+                    loopCount: false, // Cantidad de veces a repetir el array.  false = infinite
+                    showCursor: false, // Mostrar cursor palpitanto
+
+                    contentType: 'html', // 'html' o 'null' para texto sin formato
+                }
+                var typed = new Typed("#typed", options);
+            </script>
 
             <div class="boton-presentacion" id="btn-contacto">
                 <a href="#divcontacto" class="btn-iniciar-sesion">CONTACTAR</a>
