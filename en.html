@@ -18,7 +18,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- scripts -->
-    <script src="js/scripts.js"></script>
+
+
+    <script src="js/scripts.js" type="text/javascript"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" type="text/javascript"></script>
 </head>
 
@@ -34,6 +36,17 @@
 
             <!-- Nav bar -->
             <div class="menu">
+
+
+                <label for="toggle-1" class="toggle-menu">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </label>
+                <input type="checkbox" id="toggle-1">
+
                 <nav class="nav-menu">
 
                     <!-- <input type="checkbox" id="touch"> -->
@@ -46,7 +59,7 @@
                         <li class="nav-item"><a class="item-menu" href="#divproyectos">Portfolio</a></li>
                         <li class="nav-item"><a class="item-menu" href="#divcontacto">Contact</a></li>
                         <li class="nav-item">
-                            <a href="index.html" class="item-menu">En</a>
+                            <a href="index.html" class="item-menu">Es</a>
                         </li>
                         <li class="nav-item">
 
@@ -66,12 +79,15 @@
         <section class="divpresentacion" id="divpresentacion">
             <p class="titulo-soy">I' m</p>
             <h1 class="nombre">Bibiana Baldrich</h1>
-            <h2 class="profesion">
-                <span class="typed" id="typed"> </span>
-            </h2>
+
+            <h2 class="profesion"> <span class="typed" id="typed"> </span></h2>
+            <div class="boton-presentacion">
+                <a target="_blank" rel="noreferrer" href="assets/BibianaBaldricCV.pdf" class="cv_button">Download CV</a>
+            </div>
+
             <script>
                 var options = {
-                    strings: ['WEB DESIGN', 'WEB DEVELOPER', 'WEB DESIGN'],
+                    strings: ['Wed Design', 'Web Developer', 'Web Design'],
                     typeSpeed: 75,
                     startDelay: 300, // Tiempo de retraso en iniciar la animacion. Aplica tambien cuando termina y vuelve a iniciar,
                     backSpeed: 75, // Velocidad en milisegundos para borrrar una letra,
@@ -81,20 +97,14 @@
                     loop: true, // Repetir el array de strings
                     loopCount: false, // Cantidad de veces a repetir el array.  false = infinite
                     showCursor: false, // Mostrar cursor palpitanto
-                  
+
                     contentType: 'html', // 'html' o 'null' para texto sin formato
                 }
                 var typed = new Typed("#typed", options);
             </script>
 
-
-
-            <div class="boton-presentacion">
-                <a target="_blank" rel="noreferrer" href="assets/BibianaBaldricCV.pdf" class="cv_button">Download CV</a>
-            </div>
-
             <div class="boton-presentacion" id="btn-contacto">
-                <a href="#divcontacto" class="btn-iniciar-sesion">CONTACT</a>
+                <a href="#divcontacto" class="btn-iniciar-sesion">Contact</a>
             </div>
         </section>
 
@@ -104,7 +114,7 @@
                     <hr size="3">
                 </div>
                 <div class="titulosesion">
-                    <h3 class="textotitulosesion">SOBRE MI</h3>
+                    <h3 class="textotitulosesion">ABOUT</h3>
                 </div>
 
                 <div class="lineaizq">
@@ -115,11 +125,21 @@
             <div class="contenidosobremi">
                 <div class="divsobremi-texto">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam libero repellat incidunt
-                        sequi? Aspernatur autem aliquam, eum vero fugiat commodi incidunt dolor mollitia nam quasi
-                        nobis, reiciendis ad consequuntur earum.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet id aliquam repellat quas, ut
-                        tempore laboriosam laudantiu
+                        My name is Bibiana Baldrich, I am a student of Software Engineering at the Tecnológico de
+                        Antioquia I have knowledge in web development, mobile application development, database
+                        management, mockups design and prototyping of pages and applications in Adobe XD and Figma.
+
+                        <br>
+                        <br>
+                        I am in my tenth semester, I have learned and know how to implement all stages of software
+                        development from requirements analysis, architecture design, GUI design, software development to
+                        testing and documentation.
+                        <br>
+                        I am passionate about learning new things.
+
+
+
+
                     </p>
                 </div>
                 <div class="divsobremi-foto">
@@ -136,7 +156,7 @@
                     <hr size="3">
                 </div>
                 <div class="titulosesion">
-                    <h3 class="textotitulosesion">TECNOLOGIA</h3>
+                    <h3 class="textotitulosesion">TECHNOLOGY</h3>
                 </div>
 
                 <div class="lineaizq">
@@ -147,50 +167,50 @@
 
 
                 <div class="divtecnologias-item">
-                    <div class="imagen-tecnologia-item"></div>
-                    <p>HTML</p>
+                    <div class="imagen-tecnologia-item" id="img-tec-1"></div>
+                    <p>HTML5</p>
                 </div>
 
 
                 <div class="divtecnologias-item">
-                    <div class="imagen-tecnologia-item"></div>
-                    <p>HTML</p>
+                    <div class="imagen-tecnologia-item" id="img-tec-2"></div>
+                    <p>CSS3</p>
                 </div>
 
 
                 <div class="divtecnologias-item">
-                    <div class="imagen-tecnologia-item"></div>
-                    <p>HTML</p>
+                    <div class="imagen-tecnologia-item" id="img-tec-3"></div>
+                    <p>JavaScript</p>
                 </div>
 
 
                 <div class="divtecnologias-item">
-                    <div class="imagen-tecnologia-item"></div>
-                    <p>HTML</p>
+                    <div class="imagen-tecnologia-item" id="img-tec-4"></div>
+                    <p>PHP</p>
                 </div>
 
 
                 <div class="divtecnologias-item">
-                    <div class="imagen-tecnologia-item"></div>
-                    <p>HTML</p>
+                    <div class="imagen-tecnologia-item" id="img-tec-5"></div>
+                    <p>Java</p>
                 </div>
 
 
                 <div class="divtecnologias-item">
-                    <div class="imagen-tecnologia-item"></div>
-                    <p>HTML</p>
+                    <div class="imagen-tecnologia-item" id="img-tec-6"></div>
+                    <p>MySQL</p>
                 </div>
 
 
                 <div class="divtecnologias-item">
-                    <div class="imagen-tecnologia-item"></div>
-                    <p>HTML</p>
+                    <div class="imagen-tecnologia-item" id="img-tec-7"></div>
+                    <p>Bootstrap 5</p>
                 </div>
 
 
                 <div class="divtecnologias-item">
-                    <div class="imagen-tecnologia-item"></div>
-                    <p>HTML</p>
+                    <div class="imagen-tecnologia-item" id="img-tec-8"></div>
+                    <p>Sass</p>
                 </div>
             </div>
 
@@ -202,7 +222,7 @@
                     <hr size="3">
                 </div>
                 <div class="titulosesion">
-                    <h3 class="textotitulosesion">SERVICIOS</h3>
+                    <h3 class="textotitulosesion">SERVICES</h3>
                 </div>
 
                 <div class="lineaizq">
@@ -278,7 +298,7 @@
                     <hr size="3">
                 </div>
                 <div class="titulosesion">
-                    <h3 class="textotitulosesion">PROYECTOS</h3>
+                    <h3 class="textotitulosesion">PROJECTS</h3>
                 </div>
 
                 <div class="lineaizq">
@@ -331,7 +351,7 @@
                     <hr size="3">
                 </div>
                 <div class="titulosesion">
-                    <h3 class="textotitulosesion">CONTACTO</h3>
+                    <h3 class="textotitulosesion">CONTACT</h3>
                 </div>
 
                 <div class="lineaizq">
@@ -339,16 +359,15 @@
                 </div>
             </div>
 
-            <h4>¡Envíame un correo!</h4>
+            <h4>¡Send me a message!</h4>
             <form action="">
-                <input class="contacto-form" type="text" name="nombre" id="" placeholder="&#xf007;   Nombre">
+                <input class="contacto-form" type="text" name="nombre" id="" placeholder="&#xf007;   Name">
 
-                <input class="contacto-form" type="email" name="correo" id="" placeholder="&#xf0e0;   Correo">
-                <input class="contacto-form" type="number" name="numero" id=""
-                    placeholder="&#xf095;   Telefono Celular">
+                <input class="contacto-form" type="email" name="correo" id="" placeholder="&#xf0e0;   Email">
+                <input class="contacto-form" type="number" name="numero" id="" placeholder="&#xf095;   Phone Number">
                 <input class="input-mensaje contacto-form" type="text" name="mensaje" id=""
-                    placeholder="&#xf075;   Mensaje">
-                <input class="btn-submit" type="submit" value="Enviar Mensaje">
+                    placeholder="&#xf075;   Message">
+                <input class="btn-submit" type="submit" value="Send Message">
             </form>
         </section>
 

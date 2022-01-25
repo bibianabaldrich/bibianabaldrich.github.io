@@ -534,7 +534,7 @@ hr {
     display: grid;
     width: 100%;
     grid-template-columns: 2fr 1.3fr;
-    grid-template-rows: 0.8fr auto;
+    grid-template-rows: 0.8fr 1fr;
 
 }
 
@@ -542,8 +542,8 @@ hr {
     padding-top: 15px;
     grid-column: 1/2;
     grid-row: 1/3;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 45px;
+    margin-right: 25px;
 }
 
 .divsobremi-texto p {
@@ -559,7 +559,7 @@ hr {
     grid-row: 1/3;
     width: 100%;
     height: auto;
-
+padding-top: 15px;
     justify-content: center;
 }
 
@@ -572,17 +572,26 @@ hr {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 500px;
+    height: 600px;
     width: 80%;
-    border-radius: 50%;
-    margin-left: 10%;
-    margin-right: 10%;
+    border-radius: 35%;
+    margin-left: 25px;
+    margin-right: 25px;
 
 }
 
 
 
 @media only screen and (max-width: 800px) {
+
+
+    .contenidosobremi {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 2fr 1.3fr;
+        grid-template-rows: 0.2fr 1fr;
+    
+    }
 
     hr {
         width: 60px;
@@ -691,6 +700,65 @@ hr {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+#img-tec-2 {
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png) no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: contain;
+}
+
+#img-tec-3 {
+    background: url(https://ayudawp.com/wp-content/uploads/2017/01/javascript-logo-escudo.png) no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: contain;
+}
+
+#img-tec-4 {
+    background: url(http://assets.stickpng.com/images/58481791cef1014c0b5e4994.png) no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: contain;
+}
+
+
+
+#img-tec-5 {
+    background: url(http://assets.stickpng.com/images/58480979cef1014c0b5e4901.png) no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: contain;
+}
+
+
+#img-tec-6 {
+    background: url(https://1000marcas.net/wp-content/uploads/2020/11/MySQL-logo.png) no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: contain;
+}
+
+#img-tec-7 {
+    background: url(https://cdn.worldvectorlogo.com/logos/bootstrap-5-1.svg) no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: contain;
+}
+
+#img-tec-8 {
+    background: url(https://1000marcas.net/wp-content/uploads/2021/06/Sass-Logo.png) no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: contain;
 }
 
 @media only screen and (max-width: 1000px) {
