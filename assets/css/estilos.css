@@ -1064,11 +1064,17 @@ hr {
 }
 
 @media only screen and (max-width: 800px) {
-
+    .divproyectos-item {
+        display: grid;
+        grid-template-columns: 350px auto;
+        grid-template-rows: 255px auto;
+        padding-bottom: 20px;
+    }
     .imagen-proyecto {
         grid-column: 1/3;
         grid-row: 1/2;
         width: 320px;
+   
     }
 
     .list-tec-proyecto {
@@ -1078,32 +1084,31 @@ hr {
     }
 
     .list-tec-proyecto p {
-        font-size: 11px;
+        font-size: 9px;
     }
 
     .info-proyecto {
         grid-column: 1/3;
         grid-row: 2/3;
+        padding-top:0px;
     }
 
     .info-proyecto p{
-        font-size: 14px;
-        height:40px;
-    }
-
-    .divproyectos-item {
-        width: 400px;
-        height: auto;
-        padding-bottom: 20px;
+        font-size: 13px;
+        height:30px;
     }
 
     .titulo-proyecto {
-        font-size: 17px;
+        font-size: 16px;
         margin-top: 45px;
         height: 25px;
     }
-
 }
+
+@media only screen and (max-width: 800px) {
+    .info-proyecto a .fab {
+margin-left: 0px;
+}}
 /* 
 
 */
